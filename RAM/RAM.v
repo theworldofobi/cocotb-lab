@@ -9,7 +9,7 @@ module RAM128x32 #(
     output wire [(DATA_WIDTH-1):0] q
   );
 
-  reg [(DATA_WIDTH-1):0] ram [2**(ADDR_WIDTH-1):0];
+  reg [(DATA_WIDTH-1):0] ram [0:2**(ADDR_WIDTH-1)];
 
   always @(posedge clk)
   begin
